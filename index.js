@@ -11,9 +11,7 @@ const connectDB = require("./connectMongo");
 
 const aulbum  = require("./aulbum.json")
 const BookModel = require('./models/book.model')
-app.get("/api/song" , async(req,res)=>{
-  res.status(200).json( await BookModel.find())
-})
+
 const create = async() => {
  try {
   await connectDB()
@@ -27,6 +25,9 @@ const create = async() => {
  
 }
 
+app.get("/api/song" , async(req,res)=>{
+  res.status(200).json( await BookModel.find())
+})
 app.listen(80, async() => {
   console.log("Server is running on port  80");
   await create()
