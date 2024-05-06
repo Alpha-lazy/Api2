@@ -11,7 +11,9 @@ const connectDB = require("./connectMongo");
 
 const aulbum  = require("./aulbum.json")
 const BookModel = require('./models/book.model')
-
+app.get("/api/song" , (req,res)=>{
+  res.send("hi")
+})
 const create = async() => {
  try {
   await connectDB()
