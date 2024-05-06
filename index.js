@@ -11,8 +11,8 @@ const connectDB = require("./connectMongo");
 
 const aulbum  = require("./aulbum.json")
 const BookModel = require('./models/book.model')
-app.get("/api/song" , (req,res)=>{
-  res.send("hi")
+app.get("/api/song" , async(req,res)=>{
+  res.status(200).json( await BookModel.find())
 })
 const create = async() => {
  try {
