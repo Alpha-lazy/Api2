@@ -7,13 +7,8 @@ const bookSchema = new Schema({
     require: true
   }, 
   author: String,
-  price: {
-    type: Number,
-    require: true
-  },
-  description: String
-}, {
-    timestamps: true
+ 
+  uri: String
 })
 
 module.exports = mongoose.model('Book', bookSchema)
