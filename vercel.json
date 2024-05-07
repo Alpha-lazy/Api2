@@ -1,6 +1,6 @@
 {
 "functions": {
-  "api/my-function": {
+  "api/index.js": {
     "runtime": "nodejs12.x",
     "memory": 1024,
     "maxDuration": 30
