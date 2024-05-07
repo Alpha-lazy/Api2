@@ -1,4 +1,11 @@
 {
+"functions": {
+  "api/my-function": {
+    "runtime": "nodejs12.x",
+    "memory": 1024,
+    "maxDuration": 30
+  }
+},
     "version": 2,
     
     "builds": [
