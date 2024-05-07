@@ -3,7 +3,7 @@
     "version": 2,
     
     
-    "functions": {
+    "build": {
       "api/*": {
         "runtime": "nodejs14.x",
         "maxDuration": 30
